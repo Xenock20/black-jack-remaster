@@ -1,0 +1,40 @@
+# Archivos y carpetas generados por Node.js
+/node_modules
+
+# Archivos generados por el comando `npm build`
+/build
+
+# Archivos de log
+/logs
+
+# Archivos de respaldo
+*.bak
+
+# Archivos de configuración locales (por ejemplo, .env)
+.env
+
+# Archivos de caché de dependencias
+package-lock.json
+yarn.lock
+
+# Archivos de compilación de JavaScript
+*.min.js
+
+# Archivos de caché de Docker
+.docker/
+
+# Archivos de caché de las herramientas de desarrollo
+.vscode/
+.idea/
+
+# Archivos de caché de Windows
+Thumbs.db
+Desktop.ini
+
+# Ignorar archivos dentro de la carpeta cliente
+/cliente/node_modules
+/cliente/build
+
+# Ignorar archivos dentro de la carpeta servidor
+/servidor/node_modules
+/servidor/build
