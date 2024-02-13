@@ -11,7 +11,6 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: blackjack_db
     volumes:
-      - mysql-data:/var/lib/mysql
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - blackjack-network
@@ -34,8 +33,9 @@ services:
     image: blackjack-react-client
     build:
       context: ./client
+      dockerfile: Dockerfile
     ports:
-      - "5173:5173"
+      - "3000:80"
     depends_on:
       - php-server
     networks:

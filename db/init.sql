@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS cuenta (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario VARCHAR(50) UNIQUE,
     foto_code LONGBLOB,
-    contraseña VARCHAR(255) NOT NULL,
+    contrasenia VARCHAR(255) NOT NULL,
     monedas INT DEFAULT 0
 );
 
