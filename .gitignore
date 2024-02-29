@@ -32,9 +32,10 @@ Thumbs.db
 Desktop.ini
 
 # Ignorar archivos dentro de la carpeta cliente
-/cliente/node_modules
-/cliente/build
+/client/node_modules
+/clienr/build
 
 # Ignorar archivos dentro de la carpeta servidor
-/servidor/node_modules
-/servidor/build
+/server/node_modules
+/server/build
+/server/vendor
